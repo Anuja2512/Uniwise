@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_bg"
+    tools:context=".SettingsFragment">
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Settings "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/current_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Current Details : "
+        android:textColor="#000000"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/settings_current_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_details"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/settinginputbg"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+
+        android:paddingBottom="7dp"
+        android:hint="Enter current Username" />
+
+    <EditText
+        android:id="@+id/settings_current_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_current_username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/settinginputbg"
+        android:hint="Enter current Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/settings_current_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/circleBorder" />
+
+
+    <TextView
+        android:id="@+id/CP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_current_password"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Change Details : "
+        android:textColor="#000000"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/settings_new_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CP"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/settinginputbg"
+        android:hint="Enter new Username"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp" />
+    <EditText
+        android:id="@+id/settings_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_new_username"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/settinginputbg"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:hint="Enter new Password" />
+
+    <EditText
+        android:id="@+id/settings_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/settings_new_password"
+        android:background="@drawable/settinginputbg"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="10dp"
+        android:hint="Confirm new Password" />
+
+
+
+
+    <Button
+        android:id="@+id/delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_confirm_password"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/curves"
+        android:text="   Delete Account   "/>
+
+    <Button
+        android:id="@+id/settings_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_confirm_password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/curves"
+        android:text="   Save Changes   " />
+
+</RelativeLayout>

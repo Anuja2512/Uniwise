@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bforum"
+        android:icon="@drawable/ic_forum_black_24dp"
+
+        android:title="Forum"/>
+    <item
+        android:id="@+id/bhome"
+        android:icon="@drawable/ic_home_black"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/badd"
+        android:icon="@drawable/ic_add_black"
+        android:title="Add question"/>
+    <item
+        android:id="@+id/bsearch"
+        android:icon="@drawable/ic_search_black"
+        android:title="Search"/>
+    <item
+        android:id="@+id/bfindf"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="Search Profile"/>
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/HomeTab"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+    <item android:id="@+id/ProfileTab"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+    <item android:id="@+id/DeptTab"
+        android:title="Department"
+        android:icon="@drawable/dept_icon"/>
+    <item android:id="@+id/AboutTab"
+        android:title="About"
+        android:icon="@drawable/about_icon"/>
+    <item android:id="@+id/ShareTab"
+        android:title="Share"
+        android:icon="@drawable/share_icon"/>
+    <item android:id="@+id/SettingsTab"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"/>
+    <item android:id="@+id/LogoutTab"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"/>
+</menu>

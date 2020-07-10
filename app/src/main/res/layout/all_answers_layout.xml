@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="7dp"
+        android:background="@drawable/ques_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_ans_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile_icon"
+                android:layout_marginLeft="4dp"/>
+
+
+                <TextView
+                    android:id="@+id/ans_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/adamina"
+                    android:text="Username"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/settings_current_password"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/circleBorder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Answer_text"
+                android:text="Answers"
+                android:textColor="#000000"
+                android:fontFamily="@font/adamina"
+                android:textSize="12sp"
+                android:layout_marginLeft="3dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/simple_text"
+                    android:text="answered on "
+                    android:layout_below="@id/ans_username"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="3dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ans_date"
+                    android:text="Date"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="3dp"
+                    />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans_time"
+                android:text="Time"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

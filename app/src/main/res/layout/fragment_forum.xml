@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ForumFragment"
+    android:background="@drawable/gradient_bg">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <FrameLayout
+           android:id="@+id/que_container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/all_que_list"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </FrameLayout>
+   </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/ques_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_que_user_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/profile_icon"
+                android:layout_marginLeft="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/post_que_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/adamina"
+                    android:text="Username"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="has posted question on "
+                        android:textColor="@color/grey"
+                        android:id="@+id/text_que_time_dis"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" DATE"
+                        android:textColor="@color/grey"
+                        android:id="@+id/post_date"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" TIME"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/grey"
+                        android:id="@+id/post_time"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/settings_current_password"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/circleBorder" />
+
+
+        <TextView
+            android:id="@+id/user_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Question????"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/like_button"
+                android:layout_marginTop="10dp"
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:background="@color/trans"
+                android:src="@drawable/dislike"/>
+            <TextView
+                android:id="@+id/no_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="0 Likes"
+                android:layout_gravity="center_vertical"
+                android:textSize="11dp"
+                />
+
+            <ImageButton
+                android:id="@+id/comment_button"
+                android:layout_marginTop="10dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@color/trans"
+                android:src="@drawable/comment"
+                android:layout_marginLeft="124dp"
+                android:baselineAlignBottom="false"/>
+
+            <TextView
+                android:id="@+id/ans_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Answers"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

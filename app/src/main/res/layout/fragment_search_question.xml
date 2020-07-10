@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriend"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/search_friend"
+            android:layout_width="315dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/settinginputbg"
+            android:ems="10"
+            android:hint="Enter the question you want to search."
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/search_friend"
+            android:layout_toRightOf="@+id/search_friend"
+            android:background="@drawable/settinginputbg"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:src="@drawable/ic_search_black" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/myLayout">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+
