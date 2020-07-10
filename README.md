@@ -1,5 +1,7 @@
 # Uniwise
 ### This is a Student Discussion Forum app for GPP college.
+![alt text](./uniwise_logo.png "Uniwise Logo")
+
 To run the demonstration of this app on your smartphones, you have to download and add the google-services.json file.
 
 **Firebase and google-services.json**
